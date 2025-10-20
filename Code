@@ -1,0 +1,6 @@
+// 🔐 Connexion par code
+if (!sock.authState.creds.registered) {
+  const phoneNumber = "237XXXXXXXXX";
+  const code = await sock.requestPairingCode(phoneNumber);
+  console.log("📲 Entre ce code sur ton WhatsApp :", code);
+}
